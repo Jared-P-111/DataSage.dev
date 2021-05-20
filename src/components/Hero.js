@@ -15,29 +15,29 @@ const Section = styled.section`
 
   @media screen and (max-width: 1200px) {
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 80vh;
   }
 
   @media screen and (max-width: 400px) {
     background-size: 300px 300px;
+    height: 50vh;
   }
 `;
 
 const Container = styled.div`
   color: white;
   padding: 2rem;
-  margin-bottom: 6rem;
   border-radius: 10px;
+  transform: translateY(-30vh);
+  display: inline-block;
 
   @media screen and (max-width: 1200px) {
     align-self: flex-end;
-    margin-bottom: 1rem;
   }
 
   @media screen and (max-width: 400px) {
-    position: absolute;
-    font-size: 15px;
+    font-size: 10px;
     padding: 0.5rem;
   }
 
@@ -55,6 +55,10 @@ const Container = styled.div`
     font-size: 0.8rem;
     margin-bottom: 1rem;
     background-color: transparent;
+
+    @media screen and (max-width: 400px) {
+      margin-bottom: none;
+    }
   }
 
   button {
@@ -68,6 +72,10 @@ const Container = styled.div`
     text-transform: uppercase;
     background-color: rgba(0, 0, 0, 0.5);
 
+    @media screen and (max-width: 400px) {
+      padding: 0.5rem;
+    }
+
     &:hover {
       color: white;
       background-color: lightgray;
@@ -79,7 +87,8 @@ const Container = styled.div`
 
 const Hero = ({ image, title, desc, desc2, desc3, desc4, hide, github, ghPages }) => {
   return (
-    <Section image={image}>
+    <>
+      <Section image={image}></Section>
       <Container>
         <h1>{title}</h1>
         <p>{desc}</p>
@@ -103,7 +112,7 @@ const Hero = ({ image, title, desc, desc2, desc3, desc4, hide, github, ghPages }
           </button>
         )}
       </Container>
-    </Section>
+    </>
   );
 };
 

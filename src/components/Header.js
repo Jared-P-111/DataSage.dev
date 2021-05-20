@@ -41,6 +41,7 @@ const NavItems = styled.div`
     background-color: transparent;
     border-radius: 10px;
     font-size: 0.8rem;
+    margin-top: 0;
   }
 `;
 
@@ -48,8 +49,12 @@ const NavbarLink = styled(Link)`
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.8);
+
+  @media screen and (max-width: 500px) {
+    padding: 0.2rem;
+  }
 
   &:nth-child(1) {
     border-radius: 10px 0px 0px 10px;
