@@ -14,6 +14,8 @@ const ScenicOdyssey = () => {
         title="Scenic Odyssey (Current Project)"
         desc="React ES7, Conditional Rendering"
         desc2="State, Props, Framer Motion, Styled Components "
+        github="https://codesandbox.io/s/ijuj7?file=/src/index.js"
+        hide
       />
     </motion.div>
   );

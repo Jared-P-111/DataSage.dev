@@ -21,9 +21,9 @@ const Home = () => {
         desc="This site is to showcase my projects and experience"
         desc2="Tech used: React, React Router, Framer Motion & Styled Components"
         desc3="I am passionate software developer that has experience in Design & Design Engineering"
-        desc4="A love for all things tech, I founded this passion while serving for our Country, I served 10 years Honorable U.S. Navy Special Forces. "
+        desc4="A love for all things tech, I founded this passion while serving in the United States Navy. 10 years honorable, Special Forces"
         hide
-        github="https://github.com/"
+        github="https://github.com/Jared-P-111/DataSage.dev/tree/main/src"
       />
     </motion.div>
   );

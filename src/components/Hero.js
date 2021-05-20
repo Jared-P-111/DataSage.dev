@@ -52,7 +52,7 @@ const Container = styled.div`
   }
 `;
 
-const Hero = ({ image, title, desc, desc2, desc3, desc4, hide, github }) => {
+const Hero = ({ image, title, desc, desc2, desc3, desc4, hide, github, ghPages }) => {
   return (
     <Section image={image}>
       <Container>
@@ -68,7 +68,15 @@ const Hero = ({ image, title, desc, desc2, desc3, desc4, hide, github }) => {
         >
           View Code
         </button>
-        {hide ? null : <button>View Site</button>}
+        {hide ? null : (
+          <button
+            onClick={() => {
+              window.location.href = ghPages;
+            }}
+          >
+            View Site
+          </button>
+        )}
       </Container>
     </Section>
   );

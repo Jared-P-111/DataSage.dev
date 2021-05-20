@@ -14,6 +14,8 @@ const ThreeCards = () => {
         title="Three Cards"
         desc="React, Conditional Rendering"
         desc2="API Simulation, Props"
+        github="https://github.com/Jared-P-111/three-card-display-reactjs"
+        ghPages="https://jared-p-111.github.io/three-card-display-reactjs/"
       />
     </motion.div>
   );

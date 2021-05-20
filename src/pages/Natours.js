@@ -14,7 +14,10 @@ const Natours = () => {
         title="Natours"
         desc="Built with: Vanilla Javascript & Sass"
         desc2="This was a great project and gave me a solid foundation in Javascript, before I broke into
-        the wonderful world of React.js"
+        the wonderful world of React.js."
+        desc3="Please Note due to Gh-Pages image link changing on load, some images will not appear"
+        github="https://github.com/Jared-P-111/Advanced_Sass_Natours_Site"
+        ghPages="https://jared-p-111.github.io/Advanced_Sass_Natours_Site/"
       />
     </motion.div>
   );
