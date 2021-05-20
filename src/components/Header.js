@@ -23,12 +23,25 @@ const Logo = styled(Link)`
   font-style: italic;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.8);
+
+  @media screen and (max-width: 850px) {
+    align-self: center;
+    z-index: 1;
+  }
 `;
 
 const NavItems = styled.div`
   display: flex;
   margin-top: 1rem;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+    z-index: 999;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 0.8rem;
+  }
 `;
 
 const NavbarLink = styled(Link)`
@@ -40,6 +53,10 @@ const NavbarLink = styled(Link)`
 
   &:nth-child(1) {
     border-radius: 10px 0px 0px 10px;
+
+    @media screen and (max-width: 850px) {
+      border-radius: 0px 0px 0px 0px;
+    }
     &:hover {
       background-color: rgb(181, 101, 29, 0.8);
       transition: 0.3s;
@@ -66,6 +83,10 @@ const NavbarLink = styled(Link)`
 
   &:nth-child(5) {
     border-radius: 0px 10px 10px 0px;
+
+    @media screen and (max-width: 850px) {
+      border-radius: 0px 0px 0px 0px;
+    }
     &:hover {
       background-color: rgba(150, 0, 255, 0.8);
       transition: 0.3s;

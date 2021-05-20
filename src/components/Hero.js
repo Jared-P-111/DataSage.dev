@@ -4,30 +4,55 @@ import styled from 'styled-components';
 const Section = styled.section`
   background: url(${({ image }) => image && image}) center;
   background-repeat: no-repeat;
+  background-position: center top;
   background-size: auto;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-end;
   margin-top: 40px;
   backface-visibility: hidden;
+
+  @media screen and (max-width: 1200px) {
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+  }
+
+  @media screen and (max-width: 400px) {
+    background-size: 300px 300px;
+  }
 `;
 
 const Container = styled.div`
-  color: #fff;
+  color: white;
   padding: 2rem;
-  margin: 2rem;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
   border-radius: 10px;
+
+  @media screen and (max-width: 1200px) {
+    align-self: flex-end;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    position: absolute;
+    font-size: 15px;
+    padding: 0.5rem;
+  }
 
   h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
     background-color: transparent;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 1.2rem;
+    }
   }
 
   p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 1rem;
     background-color: transparent;
   }
