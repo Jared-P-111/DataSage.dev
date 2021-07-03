@@ -1,7 +1,7 @@
 import './App.css';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
-import Natours from './pages/Natours';
+import Media from './pages/Media';
 import BpScore from './pages/BpScore';
 import ThreeCards from './pages/ThreeCards';
 import ScenicOdyssey from './pages/ScenicOdyssey';
@@ -22,7 +22,7 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact component={Home} />
-          <Route path="/natours" component={Natours} />
+          <Route path="/Media" component={Media} />
           <Route path="/bpscore" component={BpScore} />
           <Route path="/threecards" component={ThreeCards} />
           <Route path="/scenicodyssey" component={ScenicOdyssey} />

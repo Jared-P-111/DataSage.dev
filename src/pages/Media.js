@@ -5,7 +5,7 @@ import Image from '../images/img-2.jpg';
 import { motion } from 'framer-motion';
 import { animationTwo } from '../animations';
 
-const Natours = () => {
+const Media = () => {
   return (
     <motion.div initial="out" animate="in" exit="out" variants={animationTwo}>
       <Header />
@@ -23,4 +23,4 @@ const Natours = () => {
   );
 };
 
-export default Natours;
+export default Media;
